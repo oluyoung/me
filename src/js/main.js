@@ -14,15 +14,20 @@ function init() {} //end init
 
 function animate() {
   requestAnimFrame(animate);
-  draw();
+  if(document.getElementById("hero-canvas") !== null){
+    draw("hero-canvas", "rgba(163,32,109,0.3)", "rgba(154,25,172,0.4)");
+  }
+  if(document.getElementById("intro-canvas") !== null){
+    draw("intro-canvas", "rgba(0,188,212,0.3)", "rgba(0,96,100,0.4)");
+  }
 }
 
-function draw() {
+function draw($id, $color1, $color2) {
   var time = new Date().getTime() * 0.002;
-  var color1 = "rgba(163,32,109,0.3)";
-  var color2 = "rgba(154,25,172,0.4)";
-  var canvas = document.getElementById("hero-canvas");
-  var ctx = document.getElementById("hero-canvas").getContext("2d");
+  var color1 = $color1;
+  var color2 = $color2;
+  var canvas = document.getElementById($id);
+  var ctx = document.getElementById($id).getContext("2d");
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.save();
 

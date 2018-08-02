@@ -235,3 +235,30 @@ body {
       text-shadow: 2px 2px 3px #111;
       font-size: 2.5em;
       letter-spacing: 2px; }
+  body .intro-container {
+    min-height: auto;
+    max-height: none;
+    height: auto; }
+    body .intro-container .wrap {
+      font-family: 'Poiret One', sans-serif;
+      background-color: #fff; }
+      body .intro-container .wrap .text-wrap {
+        position: absolute;
+        margin: auto; }
+        body .intro-container .wrap .text-wrap * {
+          padding: .5em 0;
+          display: block;
+          text-align: center;
+          z-index: 10;
+          color: #fff;
+          font-weight: bold;
+          text-shadow: 2px 2px 3px #111;
+          letter-spacing: 2px; }
+          body .intro-container .wrap .text-wrap * a {
+            text-decoration: underline;
+            color: aqua; }
+      body .intro-container .wrap .canvas {
+        padding: 0;
+        position: relative;
+        width: 100%;
+        max-height: 400px; }

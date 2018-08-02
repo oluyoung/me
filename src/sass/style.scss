@@ -287,4 +287,43 @@ body {
     }
   }
 
+  .intro-container {
+    min-height: auto;
+    max-height: none;
+    height: auto;
+
+    .wrap {
+      font-family: 'Poiret One', sans-serif;
+      background-color: #fff;
+
+      .text-wrap {
+        position: absolute;
+        margin: auto;
+
+        * {
+          padding: .5em 0;
+          display: block;
+          text-align: center;
+          z-index: 10;
+          color: #fff;
+          font-weight: bold;
+          text-shadow: 2px 2px 3px #111;
+          letter-spacing: 2px;
+
+          a {
+            text-decoration: underline;
+            color: aqua;
+          }
+        }
+      }
+
+      .canvas {
+        padding: 0;
+        position: relative;
+        width: 100%;
+        max-height:400px;
+      }
+    }
+  }
+
 }
