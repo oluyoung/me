@@ -1,5 +1,84 @@
-include includes/header.pug
+extends includes/header.pug
 
+block content
+  .container.home-container
+    h1.scrn-rdr-txt Home Page
+    .home.flex.row-wrap.just-start.align-flex-center
+      a.wrap.block.wrap-works(href="works.html")
+        h2 Works
+      .wrap.block.wrap-and
+        h2 &amp;
+      a.wrap.block.wrap-projects(href="projects.html")
+        h2 Projects
 
+  .container.tools-container
+    h2.full-width TOOLS
+    .tools.flex.row-wrap.just-start.align-flex-center
+      h3.full-width Development
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/html-5.svg", alt="HTML5")
+        h4.title.text-center.inline-block HTML5
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/css3.svg", alt="CSS3")
+        h4.title.text-center.inline-block CSS3
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/javascript.svg", alt="javascript")
+        h4.title.text-center.inline-block Javascript
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/jquery-1.svg", alt="jQuery")
+        h4.title.text-center.inline-block jQuery
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/react.svg", alt="React")
+        h4.title.text-center.inline-block React
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/angular-icon.svg", alt="^Angular4")
+        h4.title.text-center.inline-block Angular4
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/sass-1.svg", alt="SASS")
+        h4.title.text-center.inline-block SASS
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/pugpugjs.svg", alt="Pug")
+        h4.title.text-center.inline-block Pug
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/handlebars-1.svg", alt="Handlebar")
+        h4.title.text-center.inline-block HandleBars
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/django.svg", alt="Django")
+        h4.title.text-center.inline-block Django
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/php.svg", alt="PHP")
+        h4.title.text-center.inline-block PHP
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/wordpress-blue.svg", alt="Wordpress")
+        h4.title.text-center.inline-block Wordpress
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/nodejs-1.svg", alt="Node.js")
+        h4.title.text-center.inline-block NodeJS
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/mysql.svg", alt="MySQL")
+        h4.title.text-center.inline-block MySQL
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/postgresql.svg", alt="PostgreSQL")
+        h4.title.text-center.inline-block PostgreSQL
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/mongodb.svg", alt="MongoDB")
+        h4.title.text-center.inline-block MongoDB
+      //- .wrap.flex.col-nowrap.just-center.align-flex-center
+      //-   img.icon.inline-block(src="img/", alt="")
+      //-   h4.title.text-center.inline-block
 
-include includes/footer.pug
+      h3.full-width Deployment
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/docker.svg", alt="Docker")
+        h4.title.text-center.inline-block Docker
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/digitalocean-2.svg", alt="DigitalOcean")
+        h4.title.text-center.inline-block Digital Ocean
+
+      h3.full-width Version Control
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/github-icon-1.svg", alt="Github")
+        h4.title.text-center.inline-block Github
+      .wrap.flex.col-nowrap.just-center.align-flex-center
+        img.icon.inline-block(src="img/bitbucket-blue.svg", alt="Bitbucket")
+        h4.title.text-center.inline-block Bitbucket

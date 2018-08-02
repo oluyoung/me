@@ -1,0 +1,11 @@
+@mixin linear-gradient($direction:to bottom, $colors...){
+  background-image: -webkit-linear-gradient($direction, $colors);
+  background-image: -o-linear-gradient($direction, $colors);
+  background-image: linear-gradient($direction, $colors)
+}
+
+@mixin radial-gradient($shape:ellipse, $size:farthest-corner, $position:center, $colors...) {
+  background-image: -webkit-radial-gradient($shape $size at $position, $colors);
+  background-image: -o-radial-gradient($shape $size at $position, $colors);
+  background-image: radial-gradient($shape $size at $position, $colors);
+}

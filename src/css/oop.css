@@ -1,0 +1,93 @@
+body {line-height:1.2;color:#111;}
+
+/** OOP **/
+.full-width {width:100%;}
+.half-width {width:50%%;}
+.full-height {height:100%;}
+.full-vh {height:100vh;}
+.full-vw {width:100vw;}
+.text-white {color:#fff!important;}
+.text-black {color:#111!important;}
+.margin0 {margin:0!important;}
+.padding0 {padding:0!important;}
+.overx-hidden {overflow-x:hidden;}
+.overy-hidden {overflow-y:hidden;}
+.over-hidden {overflow:hidden;}
+.overx-scroll {overflow-x:scroll;}
+.overy-scroll {overflow-y:scroll;}
+.over-scroll {overflow:scroll;}
+
+/** Text **/
+.text-right {text-align:right;}
+.text-left {text-align:left;}
+.text-center {text-align:center;}
+.text-justify {text-align:justify;}
+.uppercase {text-transform:uppercase;}
+.capitalize {text-transform:capitalize;}
+.lowercase {text-transform:lowercase;}
+.small-caps {font-variant:small-caps;}
+.scrn-rdr-txt {position:absolute;text-indent:-9999;top:-1000%;left:-1000%;}
+
+/** Position **/
+.pos-rel {position:relative;}
+.pos-abs {position:absolute;}
+.pos-fix {position:fixed;}
+.far-right {right:0;}
+.far-left {left:0;}
+
+/** Display **/
+.block {display:block;}
+.inline {display: inline;}
+.inline-block {display:inline-block;}
+.none {display:none;}
+.flex {display:flex;}
+.inline-flex {display: inline-flex;}
+.row-wrap {flex-flow:row wrap;}
+.col-wrap {flex-flow:column wrap;}
+.row-nowrap {flex-flow:row nowrap;}
+.col-nowrap {flex-flow:column nowrap;}
+.just-start {justify-content:flex-start;}
+.just-center {justify-content:center;}
+.just-end {justify-content: flex-end;}
+.just-around {justify-content:space-around;}
+.just-even {justify-content:space-evenly;}
+.just-between {justify-content:space-between;}
+.align-flex-center {align-items:center;}
+.align-flex-start {align-items:flex-start;}
+.align-flex-end {align-items:flex-end;}
+
+/** Fonts **/
+.font-weight-normal {font-weight:normal;}
+.font-weight-bold {font-weight:bold;}
+.font-style-italic {font-style:italic;}
+
+/** Shapes **/
+.circle {border-radius:50%;}
+
+/** Background **/
+/* Size */
+.back-cover {background-size:cover;}
+.back-contain {background-size:contain;}
+.back-norepeat {background-repeat:no-repeat}
+/* Position */
+.back-top {background-position:top;}
+.back-top-left {background-position:top-left;}
+.back-bottom {background-position:bottom;}
+.back-bottom-left {background-position:bottom left;}
+.back-center {background-position:center}
+.back-none {background-color:transparent!important;}
+
+/** Headings **/
+h1 {font-size: 2.2em}
+h2 {font-size: 2em}
+h3 {font-size: 1.8em}
+h4 {font-size: 1.5em}
+h5 {font-size: 1.1em}
+h6 {font-size: 1em}
+
+/** Links **/
+a, button {
+  cursor: pointer;
+}
+a:link, a:visited {color: #111;text-decoration:none}
+a:hover, button:hover {opacity:.8}

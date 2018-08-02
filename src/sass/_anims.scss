@@ -1,0 +1,31 @@
+.spin-anim {
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear; }
+
+.float-anim {
+  -webkit-animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes float {
+  0% {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+    transform: translatey(0px);
+  }
+  50% {
+    text-shadow: 2px 0 3px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+    transform: translatey(0px);
+  }
+}
