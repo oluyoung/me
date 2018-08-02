@@ -156,6 +156,7 @@ body {
           height: 100px;
           width: 100px;
           padding: 1.5em 0;
+          @extend .swivel-anim;
         }
         .title {
           padding: .5em 0;

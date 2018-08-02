@@ -7,6 +7,11 @@
   animation: float 6s ease-in-out infinite;
 }
 
+.swivel-anim {
+  -webkit-animation: swivel 6s ease-in-out infinite;
+  animation: swivel 6s ease-in-out infinite;
+}
+
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -14,6 +19,18 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
+@keyframes swivel {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+}
 
 @keyframes float {
   0% {

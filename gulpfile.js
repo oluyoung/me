@@ -22,7 +22,7 @@ gulp.task('uglify-js', function() {
     .pipe(uglify())
     .pipe(concat('scripts.min.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('public/javascripts'));
+    .pipe(gulp.dest('docs/javascripts'));
 });
 
 // Copy all static images
@@ -30,7 +30,7 @@ gulp.task('images', function() {
   return gulp.src(paths.images)
     // Pass in options to the task
     .pipe(imagemin({optimizationLevel: 5}))
-    .pipe(gulp.dest('public/img'));
+    .pipe(gulp.dest('docs/img'));
 });
 
 
@@ -38,7 +38,7 @@ gulp.task('pugs', function buildHTML() {
   return gulp.src(paths.pugs)
   .pipe(pug({ // Your options in here.
   }))
-  .pipe(gulp.dest('public/'));
+  .pipe(gulp.dest('docs/'));
 });
 
 gulp.task('sass', function () {
@@ -53,7 +53,7 @@ gulp.task('uglify-css', function(){
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(concat('styles.min.css'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('public/stylesheets'));
+    .pipe(gulp.dest('docs/stylesheets'));
 });
 
 // Rerun the task when a file changes
