@@ -6,7 +6,7 @@
   -webkit-animation: float 6s ease-in-out infinite;
   animation: float 6s ease-in-out infinite; }
 
-.swivel-anim, body .container .tools .wrap .icon {
+.swivel-anim, body .container .tools .tool .wrap .icon {
   -webkit-animation: swivel 6s ease-in-out infinite;
   animation: swivel 6s ease-in-out infinite; }
 
@@ -146,58 +146,69 @@ body {
         margin: 1em 0;
         font-family: Cinzel, serif;
         text-shadow: 2px 2px 3px #757575; }
-      body .container .tools .wrap {
-        width: 15%;
-        box-shadow: 1px 1px 3px #ccc;
-        border-radius: 5px;
-        margin-bottom: 1em;
-        background-color: #fff;
-        margin: .5em; }
+      body .container .tools .tool {
+        width: 16.66%; }
         @media screen and (max-width: 1023px) {
-          body .container .tools .wrap {
-            width: 23%; } }
+          body .container .tools .tool {
+            width: 25%; } }
         @media screen and (max-width: 767px) {
-          body .container .tools .wrap {
-            width: 30%; } }
+          body .container .tools .tool {
+            width: 33.33%; } }
         @media screen and (max-width: 575px) {
-          body .container .tools .wrap {
-            width: 46%; } }
-        body .container .tools .wrap .icon {
-          height: 100px;
-          width: 100px;
-          padding: 1.5em 0; }
-        body .container .tools .wrap .title {
-          padding: .5em 0;
-          border-top: 1px solid #E0E0E0;
-          color: #000;
-          width: 100%;
-          font-family: megrim; }
-    body .container .works-home .wrap {
+          body .container .tools .tool {
+            width: 50%; } }
+        body .container .tools .tool .wrap {
+          box-shadow: 1px 1px 3px #ccc;
+          border-radius: 5px;
+          background-color: #fff;
+          margin: .5em;
+          margin-bottom: 1em; }
+          body .container .tools .tool .wrap .icon {
+            height: 100px;
+            width: 100px;
+            padding: 1.5em 0; }
+          body .container .tools .tool .wrap .title {
+            padding: .5em 0;
+            border-top: 1px solid #E0E0E0;
+            color: #000;
+            width: 100%;
+            font-family: megrim; }
+    body .container .works-home .wrap,
+    body .container .projects-home .wrap {
       width: 50%;
       min-height: 40%; }
       @media screen and (max-width: 680px) {
-        body .container .works-home .wrap {
+        body .container .works-home .wrap,
+        body .container .projects-home .wrap {
           width: 100%; } }
-      body .container .works-home .wrap .background {
+      body .container .works-home .wrap .background,
+      body .container .projects-home .wrap .background {
         min-height: 100%;
         max-height: 100%; }
-        body .container .works-home .wrap .background .title {
+        body .container .works-home .wrap .background .title,
+        body .container .projects-home .wrap .background .title {
           top: 45%;
           font-family: 'Poiret One', sans-serif;
           letter-spacing: 1px;
           font-weight: bold; }
-          body .container .works-home .wrap .background .title a {
+          body .container .works-home .wrap .background .title a,
+          body .container .projects-home .wrap .background .title a {
             padding: .5em 0;
             color: #ffc307; }
-    body .container .works-home .tpc .background {
+    body .container .works-home .tpc .background,
+    body .container .projects-home .tpc .background {
       background-image: url("../img/picture-cellar-banner-min.png"); }
-      body .container .works-home .tpc .background .title {
+      body .container .works-home .tpc .background .title,
+      body .container .projects-home .tpc .background .title {
         background-color: #111; }
-    body .container .works-home .tbe .background {
+    body .container .works-home .tbe .background,
+    body .container .projects-home .tbe .background {
       background-image: url("../img/mUSIC-bANNER-min.png"); }
-      body .container .works-home .tbe .background .title {
+      body .container .works-home .tbe .background .title,
+      body .container .projects-home .tbe .background .title {
         background-color: #a52a2a; }
-    body .container .works-home .atf .background {
+    body .container .works-home .atf .background,
+    body .container .projects-home .atf .background {
       background-color: #6db3f2;
       /* Old browsers */
       background-color: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
@@ -208,21 +219,35 @@ body {
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 );
       background-image: url("../img/atftour.png"); }
-      body .container .works-home .atf .background .title {
+      body .container .works-home .atf .background .title,
+      body .container .projects-home .atf .background .title {
         background-color: #fff8dc; }
-        body .container .works-home .atf .background .title a {
+        body .container .works-home .atf .background .title a,
+        body .container .projects-home .atf .background .title a {
           color: #5f9ea0; }
-    body .container .works-home .bmg .background {
+    body .container .works-home .bmg .background,
+    body .container .projects-home .bmg .background {
       background-image: url(../img/golden_kid.jpg); }
-      body .container .works-home .bmg .background .title {
+      body .container .works-home .bmg .background .title,
+      body .container .projects-home .bmg .background .title {
         background-color: #ffc306; }
-        body .container .works-home .bmg .background .title a {
+        body .container .works-home .bmg .background .title a,
+        body .container .projects-home .bmg .background .title a {
           color: #ed143d; }
-    body .container .projects-home .background #hero-canvas {
+    body .container .works-home .bo .background,
+    body .container .projects-home .bo .background {
+      background-image: url(../img/landingmock.png); }
+      body .container .works-home .bo .background .title,
+      body .container .projects-home .bo .background .title {
+        background-color: #fafafa; }
+        body .container .works-home .bo .background .title a,
+        body .container .projects-home .bo .background .title a {
+          color: #ed143d; }
+    body .container .projects-home .background.no-projects #hero-canvas {
       width: 100%;
       height: 100%;
       position: relative; }
-    body .container .projects-home .background .title {
+    body .container .projects-home .background.no-projects .title {
       z-index: 10;
       top: 40%;
       color: #fff;
@@ -233,6 +258,12 @@ body {
       display: block;
       width: 100%;
       text-align: center; }
+    body .container .projects-home .mm .background {
+      background-image: url(../img/march-madness.jpeg); }
+      body .container .projects-home .mm .background .title {
+        background-color: #fafafa; }
+        body .container .projects-home .mm .background .title a {
+          color: #ed143d; }
   body .works-container {
     overflow-y: scroll; }
   body .tools-container {
@@ -260,6 +291,15 @@ body {
       body .intro-container .wrap .text-wrap {
         position: absolute;
         margin: auto; }
+        @media screen and (max-width: 767px) {
+          body .intro-container .wrap .text-wrap {
+            font-size: 14px; } }
+        @media screen and (max-width: 480px) {
+          body .intro-container .wrap .text-wrap {
+            font-size: 12px; } }
+        @media screen and (max-width: 480px) {
+          body .intro-container .wrap .text-wrap {
+            font-size: 10px; } }
         body .intro-container .wrap .text-wrap * {
           padding: .5em 0;
           display: block;
