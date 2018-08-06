@@ -90,7 +90,8 @@ body {
         max-height: none; } }
     body .container .home {
       border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px; }
+      border-bottom-right-radius: 10px;
+      height: 100%; }
       body .container .home .wrap {
         width: 40%;
         height: 100%;
